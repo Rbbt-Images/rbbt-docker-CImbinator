@@ -1,6 +1,6 @@
 # rbbt-docker-CImbinator
-Analysis of synergies and atagnonisms between compounds using Ting-Chao Chous
-median effect theory
+Analysis of synergies and antagonisms between compounds using Ting-Chao Chou
+"median effect theory"
 
 To run this web service you need to setup the port-forwarding and the DISPLAY
 variable:
