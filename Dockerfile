@@ -19,6 +19,7 @@ RUN gem install prawn prawn-svg
 RUN echo "install.packages(c('Cairo','drc', 'Rserve'), repos='http://cran.us.r-project.org')" | R --vanilla
 USER rbbt
 ENV R_HOME /usr/lib/R
+RUN gem install rubyXL
 RUN rbbt workflow install CombinationIndex 
 EXPOSE 2887
 CMD ["rbbt", "workflow", "server", "CombinationIndex", "-e", "production", "-p", "2887"]
